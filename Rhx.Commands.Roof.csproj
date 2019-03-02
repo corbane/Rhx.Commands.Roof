@@ -65,7 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CommandRoof-icon.png" />
-    <Content Include="Doc\GableRoofCommand.gif" />
+    <Content Include="Doc\GableRoofCommand.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Doc\GableRoofCommand.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Doc\header.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using Rhino;
 using Rhino.Commands;
 using Rhino.DocObjects;
@@ -21,7 +23,11 @@ namespace Rhx.Commands.Roof
         ///<returns>The command name as it appears on the Rhino command line.</returns>
         public override string EnglishName => "GableRoof";
 
-        protected override string CommandContextHelpUrl => "https://github.com/corbane/Rhx.Commands.Roof/blob/master/Readme.md";
+        protected override string CommandContextHelpUrl {
+            get {
+                return Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Doc", "GableRoofCommand.html");
+            }
+        }
 
         double m_tolerance;
 
