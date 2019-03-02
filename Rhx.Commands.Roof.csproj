@@ -64,6 +64,7 @@
     <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CommandRoof-icon.png" />
     <Content Include="Doc\GableRoofCommand.gif" />
     <Content Include="Doc\header.jpg" />
   </ItemGroup>
