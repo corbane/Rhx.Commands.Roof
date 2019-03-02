@@ -20,7 +20,9 @@ namespace Rhx.Commands.Roof
 
         ///<returns>The command name as it appears on the Rhino command line.</returns>
         public override string EnglishName => "GableRoof";
-        
+
+        protected override string CommandContextHelpUrl => "https://github.com/corbane/Rhx.Commands.Roof/blob/master/Readme.md";
+
         double m_tolerance;
 
         ObjRef m_objref;
